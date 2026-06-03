@@ -54,3 +54,55 @@ img {
     height: auto;
     display: block;
 }
+
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(var(--grid-columns), 1fr);
+    gap: var(--grid-gap);
+}
+
+
+.button {
+    display: inline-block;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: var(--font-main);
+}
+
+.button--primary {
+    font-weight:800;
+    background-color: var(--color-primary);
+    color: var(--color-bg-darker);
+}
+
+.button--primary:hover {
+    background-color: var(--color-primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(212, 122, 38, 0.4);
+}
+
+.button--submit {
+    background-color: var(--color-bg-darker);
+    color: var(--color-white);
+    border-radius: 20px;
+    padding: 14px 40px;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.button--submit:hover {
+    background-color: var(--color-bg-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
