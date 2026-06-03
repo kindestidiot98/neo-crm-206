@@ -1,0 +1,56 @@
+:root {
+    --color-primary: #D47A26;
+    --color-primary-hover: #b86920;
+    --color-primary-light: #F39343;
+    --color-bg-dark: #2A2A2A;
+    --color-bg-darker: #1C1C1C;
+    --color-bg-brown: #48250A;
+    --color-bg-black: #111111;
+    --color-white: #FFFFFF;
+    --color-text-main: #E0E0E0;
+    --color-text-dark: #222222;
+    
+    --font-main: "Raleway", sans-serif;
+    
+    --grid-columns: 12;
+    --grid-gap: 20px;
+    --header-height: 85px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body.page {
+    font-family: var(--font-main);
+    color: var(--color-text-main);
+    background-color: var(--color-white);
+    line-height: 1.5;
+    padding-top: var(--header-height); 
+}
+
+body.page--lock {
+    overflow: hidden; 
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
