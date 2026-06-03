@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEO-CRM - Система для автосервиса</title>
+
+</head>
+<body class="page">
+    
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__contacts">
+                <a href="mailto:support@neocrm.kz" class="header__link">support@neocrm.kz</a>
+                <a href="tel:+70000008888" class="header__link">+7 000 000 8888</a>
+            </div>
+            
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#home" class="header__nav-link">Главная</a></li>
+                    <li class="header__nav-item"><a href="#about" class="header__nav-link">О системе</a></li>
+                    <li class="header__nav-item"><a href="#features" class="header__nav-link">Функции</a></li>
+                    <li class="header__nav-item"><a href="#partners" class="header__nav-link">Партнёры</a></li>
+                    <li class="header__nav-item"><a href="#faq" class="header__nav-link header__nav-link--active">Q&A</a></li>
+                    <li class="header__nav-item"><a href="#contact" class="header__nav-link header__nav-link--active">Связаться</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header__action">
+                <a href="crm.html" class="button button--primary">Начать</a>
+            </div>
+
+            <button class="header__burger" type="button" aria-label="Открыть меню">
+                <span class="header__burger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+        <section id="home" class="hero">
+            <div class="hero__wrapper container grid">
+                <div class="hero__content">
+                    <h1 class="hero__title">NEO - CRM</h1>
+                    <p class="hero__subtitle">Добро пожаловать в будущее автосервиса</p>
+                </div>
+                <div class="hero__image-wrapper">
+                    <img src="img/autoservice-image.webp" alt="Интерьер автосервиса" class="hero__image" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container grid">
+                <div class="about__content">
+                    <h2 class="about__title">О системе</h2>
+                    <p class="about__text">
+                        <strong>NEO-CRM</strong> - это базовая и интуитивно понятная система, разработанная для автоматизации основных процессов в небольшом автосервисе или автомастерской.
+                    </p>
+                    <p class="about__text">
+                        <strong>Главная задача системы</strong> - заменить бумажные журналы и разрозненные таблицы единым цифровым пространством, где удобно хранить информацию и вести ежедневный учет. Система ориентирована на практичность: здесь нет перегруженного функционала или сложных настроек, только самые необходимые инструменты для контроля текущей работы мастерской.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="features__header">
+                <div class="container grid">
+                    <h2 class="features__title">Функции</h2>
+                </div>
+            </div>
+            <div class="features__body">
+                <div class="container grid">
+                    <div class="features__grid">
+                        
+                        <article class="feature-card">
+                            <div class="feature-card__icon-wrapper">
+                                <img src="/img/clients.svg" alt="Иконка клиентов" class="feature-card__icon" loading="lazy">
+                            </div>
+                            <div class="feature-card__info">
+                                <h3 class="feature-card__title">Учёт клиентов и машин</h3>
+                                <p class="feature-card__text">Позволяет вести структурированный учет всех автовладельцев и закрепленных за ними машин. В системе сохраняется история обращений, что помогает быстро узнать, с какими проблемами автомобиль приезжал в прошлый раз.</p>
+                            </div>
+                        </article>
+
+                        <article class="feature-card">
+                            <div class="feature-card__icon-wrapper">
+                                <img src="/img/sign.svg" alt="Иконка записи" class="feature-card__icon" loading="lazy">
+                            </div>
+                            <div class="feature-card__info">
+                                <h3 class="feature-card__title">Запись на ремонт</h3>
+                                <p class="feature-card__text">Простой визуальный планировщик для фиксации входящих заявок. Помогает распределять поток машин на день или неделю вперед, избегать накладок и контролировать, какой мастер сейчас занят.</p>
+                            </div>
+                        </article>
+
+                        <article class="feature-card">
+                            <div class="feature-card__icon-wrapper">
+                                <img src="/img/order.svg" alt="Иконка документов" class="feature-card__icon" loading="lazy">
+                            </div>
+                            <div class="feature-card__info">
+                                <h3 class="feature-card__title">Заказ-наряды</h3>
+                                <p class="feature-card__text">Центральный блок системы, где фиксируется текущая работа. Здесь формируется список выполненных услуг, указывается стоимость работ и ведется подсчет итоговой суммы для расчета с клиентом.</p>
+                            </div>
+                        </article>
+
+                        <article class="feature-card">
+                            <div class="feature-card__icon-wrapper">
+                                <img src="/img/control.svg" alt="Иконка статусов" class="feature-card__icon" loading="lazy">
+                            </div>
+                            <div class="feature-card__info">
+                                <h3 class="feature-card__title">Контроль статусов</h3>
+                                <p class="feature-card__text">Позволяет в реальном времени видеть, на каком этапе находится каждый автомобиль: на диагностике, в процессе ремонта, ожидает запчастей или уже готов к выдаче.</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="partners" class="partners">
+            <div class="container grid">
+                <div class="partners__content">
+                    <h2 class="partners__title">Наши партнёры</h2>
+                    <div class="partners__logos">
+                        <div class="partners__logo-wrapper">
+                            <img src="img/emex_logo.webp" alt="EMEX" class="partners__logo" loading="lazy">
+                        </div>
+                        <div class="partners__logo-wrapper">
+                            <img src="img/autoland_logo.webp" alt="AUTOLAND" class="partners__logo" loading="lazy">
+                        </div>
+                        <div class="partners__logo-wrapper">
+                            <img src="img/mobil_logo.webp" alt="Mobil Сервис" class="partners__logo" loading="lazy">
+                        </div>
+                        <div class="partners__logo-wrapper">
+                            <img src="img/astana_logo.webp" alt="Astana Motors" class="partners__logo" loading="lazy">
+                        </div>
+                    </div>
+                    <p class="partners__text">Мы сотрудничаем с ведущими казахстанскими сетями автосервисов и автокомплексами. Их практический опыт и реальные рабочие процессы помогли нам сделать NEO-CRM максимально удобной, простой и избавленной от лишней бюрократии.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq">
+            <div class="container grid">
+                <aside class="faq__sidebar">
+                    <h2 class="faq__title">Q&A</h2>
+                </aside>
+                <div class="faq__content">
+                    <div class="faq__list">
+                        
+                        <article class="faq-item">
+                            <div class="faq-item__trigger">
+                                <h3 class="faq-item__question">Нужно ли устанавливать программу на компьютер?</h3>
+                                <span class="faq-item__icon"></span>
+                            </div>
+                            <div class="faq-item__answer-wrapper">
+                                <p class="faq-item__answer">Нет, NEO-CRM — это полностью облачная система. Вам не нужно ничего скачивать или устанавливать. Достаточно иметь любой браузер на компьютере, планшете или смартфоне с доступом в интернет.</p>
+                            </div>
+                        </article>
+
+                        <article class="faq-item">
+                            <div class="faq-item__trigger">
+                                <h3 class="faq-item__question">Можно ли вести учет нескольких мастеров и подъемников?</h3>
+                                <span class="faq-item__icon"></span>
+                            </div>
+                            <div class="faq-item__answer-wrapper">
+                                <p class="faq-item__answer">Да, система поддерживает разделение постов и боксов в интерактивном календаре. Вы сможете закреплять мастеров за конкретными задачами и визуально контролировать загрузку СТО.</p>
+                            </div>
+                        </article>
+
+                        <article class="faq-item">
+                            <div class="faq-item__trigger">
+                                <h3 class="faq-item__question">Где хранятся данные клиентов и насколько это безопасно?</h3>
+                                <span class="faq-item__icon"></span>
+                            </div>
+                            <div class="faq-item__answer-wrapper">
+                                <p class="faq-item__answer">Все данные хранятся на защищенных облачных серверах с регулярным автоматическим резервным копированием. Информация доступна только авторизованным сотрудникам вашей мастерской.</p>
+                            </div>
+                        </article>
+
+                        <article class="faq-item">
+                            <div class="faq-item__trigger">
+                                <h3 class="faq-item__question">А если клиент приедет через полгода, я смогу найти его историю?</h3>
+                                <span class="faq-item__icon"></span>
+                            </div>
+                            <div class="faq-item__answer-wrapper">
+                                <p class="faq-item__answer">Конечно. Система хранит бессрочную историю по каждому клиенту и автомобилю. Достаточно ввести госномер или телефон в строку быстрого поиска, чтобы поднять все старые заказ-наряды.</p>
+                            </div>
+                        </article>
+
+                        <article class="faq-item">
+                            <div class="faq-item__trigger">
+                                <h3 class="faq-item__question">Что делать, если ремонт затягивается, потому что долго едут запчасти?</h3>
+                                <span class="faq-item__icon"></span>
+                            </div>
+                            <div class="faq-item__answer-wrapper">
+                                <p class="faq-item__answer">Для этого предусмотрен статус «Ожидание». При его активации вся команда видит причину простоя, а автомобиль корректно распределяется в планере, освобождая пост для других оперативных задач.</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container grid">
+                <div class="contact__form-wrapper">
+                    <h2 class="contact__title">Остались вопросы?<br>Свяжитесь с нами!</h2>
+                    <form class="form" action="#" method="POST">
+                        <label class="form__label">
+                            <span class="form__label-text">ФИО</span>
+                            <input type="text" class="form__input" name="name" required>
+                        </label>
+                        <label class="form__label">
+                            <span class="form__label-text">Ваш телефон</span>
+                            <input type="tel" class="form__input" name="phone" required>
+                        </label>
+                        <label class="form__label">
+                            <span class="form__label-text">Название автосервиса / Город</span>
+                            <input type="text" class="form__input" name="company" required>
+                        </label>
+                        <button class="button button--submit" type="submit">Отправить</button>
+                    </form>
+                </div>
+                <aside class="contact__info">
+                    <h3 class="contact__info-title">Контакты для прямой связи</h3>
+                    <p class="contact__info-text">Если вам удобнее написать или позвонить напрямую, наши менеджеры на связи с понедельника по пятницу, с 09:00 до 18:00.</p>
+                    
+                    <div class="contact__details">
+                        <p class="contact__detail-item"><strong>Телефон:</strong> +7 000 000 8888</p>
+                        <div class="contact__socials">
+                            <div class="contact__social-icon-wrapper">
+                                <img src="img/telegram_logo.webp" alt="Telegram" class="contact__social-icon" loading="lazy">
+                            </div>
+                            <div class="contact__social-icon-wrapper">
+                                <img src="img/whatsapp_logo.webp" alt="WhatsApp" class="contact__social-icon" loading="lazy">
+                            </div>
+                        </div>
+                        <p class="contact__detail-item"><strong>@neo_crm_support</strong></p>
+                        <p class="contact__detail-item mt-custom"><strong>Email:</strong> support@neocrm.kz</p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__contacts">
+                <a href="mailto:support@neocrm.kz" class="footer__link">support@neocrm.kz</a>
+                <a href="tel:+70000008888" class="footer__link">+7 000 000 8888</a>
+            </div>
+            <div class="footer__logo">
+                NEO - CRM
+            </div>
+            <nav class="footer__nav">
+                <a href="#home" class="footer__nav-link">Главная</a>
+                <a href="#features" class="footer__nav-link">Функции</a>
+                <a href="#about" class="footer__nav-link">О системе</a>
+                <a href="#partners" class="footer__nav-link">Партнёры</a>
+            </nav>
+        </div>
+    </footer>
+
+
+</body>
+</html>
