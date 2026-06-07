@@ -598,3 +598,51 @@ img {
 .mt-custom {
     margin-top: 30px;
 }
+
+
+.footer{
+    background-color: var(--color-bg-black);
+    padding: 40px 0;
+    color: var(--color-text-main);
+    font-size: 14px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__link {
+    display: inline-block;
+    opacity: 0.7;
+}
+
+.footer__link:hover {
+    color: var(--color-primary);
+}
+
+.footer__logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--color-primary);
+}
+
+.footer__nav{
+    display: flex;
+    gap: 25px;
+}
+
+.footer__nav-link {
+    opacity: 0.7;
+}
+
+.footer__nav-link:hover{
+    color: var(--color-primary);
+}
