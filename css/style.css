@@ -491,3 +491,110 @@ img {
 .faq-item--open .faq-item__icon {
     transform: rotate(45deg);
 }
+
+
+.contact {
+    background-color: var(--color-white);
+    padding: 80px 0;
+}
+
+.contact__form-wrapper {
+    grid-column: span 6;
+    background-color: var(--color-primary-light);
+    padding: 50px;
+    border-radius: 20px;
+    color: var(--color-bg-darker);
+}
+
+.contact__title {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    color: var(--color-bg-darker);
+    line-height: 1.2;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.form__label-text {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form__input {
+    width: 100%;
+    padding: 14px 20px;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    font-family: var(--font-main);
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form__input:focus {
+    outline: none;
+    border-color: var(--color-bg-darker);
+}
+
+.contact__info {
+    grid-column: 7 / 13;
+    padding: 30px 0 30px 60px;
+    color: var(--color-text-dark);
+}
+
+.contact__info-title {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+}
+
+.contact__info-text {
+    font-size: 16px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.contact__details {
+    font-size: 18px;
+}
+
+.contact__detail-item {
+    margin-bottom: 12px;
+}
+
+.contact__socials {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.contact__social-icon-wrapper {
+    width: 45px;
+    height: 45px;
+    background-color: #F0F0F2; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.contact__social-icon-wrapper:hover {
+    transform: translateY(-3px);
+    background-color: #E2E2E5;
+}
+
+.contact__social-icon {
+    width: 22px;
+    height: 22px;
+}
+
+.mt-custom {
+    margin-top: 30px;
+}
