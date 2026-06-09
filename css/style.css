@@ -676,10 +676,11 @@ img {
     align-items: center;
 }
 
-.footer_contacts {
+.footer__contacts {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    gap: 6px;
 }
 
 .footer__link {
