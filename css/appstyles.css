@@ -25,7 +25,7 @@
     --bg-modal: #ffffff;
     
     --text-main: #2c3e50;
-    --text-muted: #7f8c8d;
+    --text-muted: #000000;
     --border-color: #ecf0f1;
 }
 
@@ -217,3 +217,108 @@ body {
 }
 
 
+.select {
+    padding: 8px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.select--status {
+    width: 100%;
+}
+
+
+.settings-card {
+    background-color: var(--bg-sidebar);
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    max-width: 400px;
+}
+
+.settings-card__label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+
+.modal {
+    margin: auto;
+    padding: 0;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--bg-modal);
+    color: var(--text-main);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: 450px;
+    max-width: 90vw;
+}
+
+.modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+}
+
+.form {
+    padding: 30px;
+}
+
+.form__title {
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.form__group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+.form__input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: transparent;
+    color: var(--text-main);
+    font-size: 15px;
+    transition: border-color 0.2s;
+}
+
+.form__input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.form__input.is-invalid {
+    border-color: var(--danger-color);
+}
+
+.form__error {
+    color: var(--danger-color);
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+.form__input.is-invalid + .form__error {
+    display: block;
+}
+
+.form__actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 30px;
+}
