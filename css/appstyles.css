@@ -174,3 +174,43 @@ body {
     background-color: var(--danger-color);
     color: #fff;
 }
+
+
+.table-container {
+    width: 100%;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.table__head {
+    background-color: var(--bg-table-head);
+    color: #fff;
+}
+
+.table__cell {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.table__cell--header {
+    font-weight: 600;
+}
+
+.table__row {
+    background-color: var(--bg-table-row);
+    transition: background-color 0.2s;
+}
+
+.table__row:nth-child(even) {
+    background-color: var(--bg-table-row-alt);
+}
