@@ -153,6 +153,7 @@ body {
 
 .button--secondary {
     background-color: transparent;
+    font-family: var(--font-main);
     border: 1px solid var(--text-muted);
     color: var(--text-main);
 }
@@ -321,4 +322,94 @@ body {
     justify-content: flex-end;
     gap: 12px;
     margin-top: 30px;
+}
+
+
+@media (max-width: 1440px) {
+    .section { padding: 25px; }
+}
+
+@media (max-width: 768px) {
+    .page { flex-direction: column; }
+    
+    .sidebar { 
+        width: 100%; 
+        border-right: none; 
+        border-bottom: 1px solid var(--border-color); 
+        flex-direction: column; 
+        padding: 0; 
+    }
+    
+    .sidebar__brand { 
+        padding: 15px 20px; 
+        border-bottom: 1px solid var(--border-color); 
+    }
+    
+    .nav__list { 
+        display: flex; 
+        padding: 10px 20px; 
+        overflow-x: auto; 
+        gap: 15px;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .nav__link { 
+        padding: 10px; 
+        font-size: 16px; 
+        white-space: nowrap; 
+        width: auto;
+    }
+    
+    .header { flex-direction: column; align-items: flex-start; gap: 15px; }
+    .section { padding: 15px; }
+    .table-container { border: none; border-radius: 0; }
+
+    
+    .table, .table__head, .table__body, .table__row, .table__cell {
+        display: block;
+        width: 100%;
+    }
+
+    .table__head {
+        display: none;
+    }
+
+    .table__row {
+        margin-bottom: 15px;
+        background-color: var(--bg-table-row);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    .table__cell {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 5px;
+        border-bottom: 1px solid var(--border-color);
+        text-align: right;
+        white-space: normal; 
+    }
+
+    .table__cell:last-child {
+        border-bottom: none;
+        justify-content: center;
+        padding-top: 15px;
+    }
+
+    .table__cell::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: var(--text-muted);
+        text-align: left;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    .header__title { font-size: 24px; }
+    .form { padding: 20px; }
+    .form__actions { flex-direction: column; gap: 10px; }
+    .button { width: 100%; }
 }
